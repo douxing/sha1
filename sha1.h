@@ -1,5 +1,8 @@
 #ifndef SHA1_H
 #define SHA1_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
    SHA-1 in C
@@ -39,4 +42,7 @@ void SHA1(
     const char *str,
     int len);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* SHA1_H */
